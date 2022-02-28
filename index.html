@@ -1,0 +1,126 @@
+
+<htm<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>p11</title>
+    </head>
+    <script>
+        $(document).ready(function() {
+            $(".ruso").hide();
+            $(".cuadrao").click(function(){
+                 $(".ruso").show();
+                 $(".overlay").css("background-image","url('img/okokok.jpg')");  
+            }); 
+            $(".ruso").click(function(){
+                $(".ruso").hide();
+                $(".overlay").css("background-image","none");  
+            });
+         });
+</script>
+    <style>
+h1{
+   font-family: Quicksand;
+}
+.titulo{
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    transform: rotate(-10deg);
+    font-size: 30px;
+    margin-left: 20px;
+}
+body {
+background-color: rgb(214, 197, 185)
+}
+.rombo {
+     width: 400px; 
+     height: 400px; 
+     position: absolute;
+     top: 50%;
+     right: 24%;
+     background-color: black;
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(80deg);
+}
+.uno{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    font-size: 140px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: orangered;
+}
+.autor{
+    position: absolute;
+    top: 175%;
+    left: 8%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.overlay{
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+background-blend-mode: multiply;
+opacity: 40%;
+z-index: -5;
+
+}
+.bauhaus{
+    position: absolute;
+    top: 115%;
+    left: 47%;
+    transform: rotate(-10deg);
+}
+.cuadrao{
+    position: absolute;
+    top: 80%;
+    right: 25%;
+    width: 150px;
+    height: auto;
+}
+
+
+.ruso{
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  
+    
+}
+
+h2{
+    color: brown;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    drop text-shadow: color: red;
+
+}
+
+
+    </style>
+    <body>
+         <div class="titulo"><H1>INTERNATIONALE <br> A R C H I T E K T U R</H1></div>      
+         <div class="rombo">
+             <img class="ruso" src="img/Vladimir-Tatlin.jpg" alt="">
+         </div>
+         <div class="bauhaus"><h1>BAUHAUSBÜCHER</h1></div>
+         <div class="uno"><h1>1</h1></div>
+        
+         
+         <div class="autor"><h2>Zweite Verani</h2></div>
+         <a href="#"><img class="cuadrao" src="img/CUADRAO.png" alt="pbg"></a>
+         <div class="overlay">
+            <!--<img  src="img/okokok.jpg" alt="">-->
+         </div>
+         <a href="img/Gropius_Walter_hrsg_Internationale_Architektur.jpg"><h2> CARTEL ORIGINAL</h2></a>
+       
+
+    </body>
